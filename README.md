@@ -1,4 +1,4 @@
-# koop-static-maps
+# static-maps
 A nodejs REST api that accepts POST json and returns a static map image for use in custom report designs or whatever you want.
 
 ## Goals
