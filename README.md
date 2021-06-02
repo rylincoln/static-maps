@@ -21,7 +21,7 @@ A nodejs REST api that accepts POST json and returns a static map image for use 
 - 'custom': NOTE:If you pass the string 'custom' to baseLayer you MUST include the `customBaseURL` key in the JSON payload e.g.
 ```json
   "baseLayer": "custom",
-  "customBaseURL": "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+  "customBaseURL": "http://tiles.wmflabs.org/hillshading/${z}/${x}/${y}.png",
   "zoom": 6,
 ```
 ### TODO 
