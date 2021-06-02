@@ -29,6 +29,10 @@ A nodejs REST api that accepts POST json and returns a static map image for use 
 - ~~configurable custom tile server~~ (DONE)
 - ???
 
+### Caprover (Optional)
+[Caprover](https://caprover.com/) is a platform as a service. Self described as "Heroku on steroids"
+The captain-definition file in this repo should work for running this on caprover once you have a server setup and operational.
+
 ### POST json body to pass the following inputs
 example body of post:
 
