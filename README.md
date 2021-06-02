@@ -8,7 +8,7 @@ A nodejs REST api that accepts POST json and returns a static map image for use 
 
 ### Tech stack
 - [ExpressJS/Node for the glue](https://github.com/expressjs/)
-- [StaticMap Python Library for making the map images](https://github.com/komoot/staticmap)
+- [StaticMap Python Library for making the map images](https://github.com/komoot/staticmap) This library does all the heavy lifting.
 - [PythonShell for talking to Python from Node](https://github.com/extrabacon/python-shell)
 - [Makizushi for on the fly icons](https://github.com/mapbox/makizushi)
 
