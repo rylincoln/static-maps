@@ -1,0 +1,1 @@
+temp storage for map image files

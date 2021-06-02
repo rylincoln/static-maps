@@ -1,0 +1,37 @@
+{
+  "name": "esri-static-maps",
+  "version": "1.0.0",
+  "description": "simple express app for generating an image from an esri mapservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EV-Digital-Team/esri-static-maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EV-Digital-Team/esri-static-maps/issues"
+  },
+  "homepage": "https://github.com/EV-Digital-Team/esri-static-maps#readme",
+  "dependencies": {
+    "@esri/arcgis-rest-request": "^3.0.2",
+    "@mapbox/maki": "^6.2.0",
+    "@mapbox/makizushi": "^3.0.1",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "find-remove": "^2.0.3",
+    "helmet": "^4.4.1",
+    "isomorphic-form-data": "^2.0.0",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "python-shell": "^2.0.3"
+  }
+}

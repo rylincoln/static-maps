@@ -1,0 +1,2 @@
+staticmap==0.5.5
+Pillow==8.1.1

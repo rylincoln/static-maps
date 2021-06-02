@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM node:14.16.0-alpine",
+    "ENV PYTHONUNBUFFERED=1",
+    "RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python",
+    "RUN apk add --update --no-cache jpeg-dev zlib-dev gcc python3-dev linux-headers musl-dev",
+    "RUN python3 -m ensurepip",
+    "RUN pip3 install --no-cache --upgrade pip setuptools",
+    "RUN pip3 install --no-cache staticmap requests pathlib Path datetime argparse Pillow",
+    "RUN mkdir -p /usr/src/app",
+    "RUN mkdir -p /usr/src/app/public",
+    "WORKDIR /usr/src/app",
+    "COPY ./package.json /usr/src/app/",
+    "RUN npm install && npm cache clean --force",
+    "RUN apk add libc6-compat",
+    "RUN ln -s /lib/libc.musl-x86_64.so.1 /lib/ld-linux-x86-64.so.2",
+    "COPY ./ /usr/src/app",
+    "RUN ls /usr/src/app",
+    "ENV NODE_ENV production",
+    "ENV PORT 80",
+    "EXPOSE 80",
+    "CMD [ \"npm\", \"start\" ]"
+  ]
+}
