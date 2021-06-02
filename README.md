@@ -13,7 +13,6 @@ A nodejs REST api that accepts POST json and returns a static map image for use 
 - [Makizushi for on the fly icons](https://github.com/mapbox/makizushi)
 
 ### Available Basemap Options
-- 'topo': 'National Map USGS Topo'
 - 'stamen-topo': Stamen Terrain
 - 'stamen-toner': Stamen Toner
 - 'stamen-watercolor': Stamen Watercolor
